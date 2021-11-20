@@ -9,16 +9,44 @@
 <body>
     <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    
+    
     <div id='root'></div>
+    
+    
     <script>
         const root = document.querySelector('#root')
 
-        const element = React.createElement('h1', {
-            children : 'Hallo React',
-            className : 'heading-1'
+        const element = React.createElement('p', {
+            children : 'Paragraph 1'
         })
 
-        ReactDOM.render(element, root)
+        const element2 = React.createElement('p',{
+            children : 'Paragraph 2'
+        })
+
+
+        const li = React.createElement('li',{
+            children : 'list 1'
+        })
+
+        const li2 = React.createElement('li',{
+            children : 'list 2'
+        })
+
+        const li3 = React.createElement('li',{
+            children : 'list 3'
+        })
+        const list = React.createElement('ol',{
+            className : 'ini-list'
+        }, li, li2, li3 )
+
+
+        const Main = React.createElement(React.Fragment,null, element, element2, list)
+        console.log(Main)
+
+
+        ReactDOM.render(Main, root)
     </script>
 </body>
 </html>
