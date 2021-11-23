@@ -1,0 +1,23 @@
+body{
+    background-color : ghostwhite
+}
+
+
+
+.number{
+    font-size: 50px;
+}
+
+.plus-btn{
+    font-size: 50px;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(99, 196, 99);
+}
+
+.min-btn{
+    font-size: 50px;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(224, 106, 106);
+}
