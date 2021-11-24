@@ -4,7 +4,7 @@ function Counter() {
   const num = state[0];
   const updateNum = state[1]; //React UseEffect
 
-  Reat.useState(function () {
+  Reat.useEffect(function () {
     console.log('Terjadi Perubahan Pada Number');
   }, [num]);
 

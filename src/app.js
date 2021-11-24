@@ -1,15 +1,15 @@
-const root = document.querySelector('#root')
+const root = document.querySelector("#root");
 
+function App() {
+  const friends = ["andy", "carl", "max"];
 
-function App(){
-
-    return(
-       <>
-       </> 
-    )
+  return (
+      <ul>
+        {friends.map(function (friend) {
+          return <li key={friend}>{friend}</li>;
+        })}
+      </ul>
+  );
 }
 
-  
-
-    
-ReactDOM.render(<App/>, root)
+ReactDOM.render(<App />, root);
